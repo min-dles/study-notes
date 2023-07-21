@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="./scripts/client.js"></script>
     <title>Tier 4 Study Notes</title>
   </head>
@@ -17,12 +18,20 @@
         <h2>freeCodeCamp</h2>
         <p>This is the main section, starting with freeCodeCamp source materials.</p>
         <ol>
-          <li><div class="code-font">'DROP DATABASE &#60;table-name&#62;'</div> drops all tables in the database and deletes the database.</li>
+          <li><span class="code-font">'DROP DATABASE &#60;table-name&#62;'</span> drops all tables in the database and deletes the database.</li>
           <ol class="alpha-list">
-            <li>In studying and then coding this example, I learned about HTML entities.</li>
+            <li>In studying and then coding this example, I learned about <span class="emphasis">HTML entities</span>.</li>
             <li>HTML has 'reserved characters' such as (&#60;), so to display these in HTML, need to use 'character entities'.</li>
-            <li>The 'character entity' number for (&#60;) is <div class="code-font">&amp#60;</div></li>
+            <li>The 'character entity' number for (&#60;) is <span class="code-font">&amp#60;</span></li>
             <li>NOTE: There are entity names and entity numbers.</li>
+            <li>This is to test the 'greater than' char entity can be more than one option; there is also (&gt;) from <span class="code-font">&ampgt;</span> Or possibly (&lt;) from <span class="code-font">&amplt;</span></li>
+            <ol class="alpha-list">
+              <li>Wow, so intuitive! gt = Greater Than, and lt = Less Than</li>
+            </ol>
+          </ol>
+          <li>Check the console for some JavaScript lessons on recursion (and the call stack) learned today as well</li>
+          <ol class="alpha-list">
+            <li>This JS practice also led to learning about the latest jQuery updates for documents on ready. No longer need to use <span class="code-font">$(document).ready(onReady);</span></li>
           </ol>
         </ol>
       </section>

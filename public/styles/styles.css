@@ -13,3 +13,8 @@ html {
 .alpha-list {
   list-style-type: lower-alpha;
 }
+
+.emphasis {
+  font-style: italic;
+  color: rgb(169, 0, 0);
+}
