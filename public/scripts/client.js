@@ -47,7 +47,7 @@ let inventory = {
 };
 
 // TOGGLE THIS Boolean TO SEE DIFFERENT BEHAVIORS 
-let is_shop_open = false;
+let is_shop_open = true;
 
 // SECTION 1 - comment out when focusing on other sections
 /* async function order() {
@@ -98,7 +98,7 @@ console.log("taking customer orders");
 */
 
 // SECTION 3 - continuing async/await lesson (comment out when focusing on other sections):
-/* function time(ms) {
+function time(ms) {
   return new Promise((resolve, reject) => {
     if (is_shop_open) {
       setTimeout(resolve, ms)
@@ -110,13 +110,16 @@ console.log("taking customer orders");
 
 async function kitchen() {
   try {
+    await time(1000);
+    console.log("Welcome to krusty krab pizza! What would you like?");
+
     await time(2000);
     console.log(`Customer chose this topping: ${inventory.fruits[2]}`);
     
-    await time(0);
+    await time(1000);
     console.log("start making some pizzas~");
 
-    await time(2000);
+    await time(1000);
     console.log(`Put sauce on the pizza: ${inventory.sauce[1]}`);
 
     await time(1000);
@@ -141,6 +144,5 @@ async function kitchen() {
 
 // call the function below: 
 kitchen();
-*/
 
 // Placeholder: new notes to be added
